@@ -1,0 +1,81 @@
+body {
+    background-color: #ffae68;
+}
+
+h1 {
+    margin-left: 3%;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cont {
+    background-color: #de5917;
+    padding: 16px;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+h2 {
+    color: #2d2d2d;
+    font-weight: bolder;
+}
+
+table {
+    width: 45%;
+}
+
+p {
+    color: #2d2d2d;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a {
+    margin-left: 4%;
+    text-decoration: none;
+    color: #2d2d2d;
+}
+@font-face {
+    font-family: "F1";
+    src: url("Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "F2";
+    src: url("Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "F3";
+    src: url("Inter_18pt-Regular.ttf");
+}
+.one{
+    font-family: "F1";
+}
+.two{
+    font-family: "F2";
+}
+.three{
+    font-family: "F3";
+}
+.descr1{
+    text-align: center;
+}
+.descr2{
+    text-align: left;
+}
+.descr3{
+    text-align: justify;
+}
+.big{    
+    width: 1440px;
+    margin: auto;
+}

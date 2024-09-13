@@ -1,0 +1,115 @@
+<!DOCTYPE HTML> 
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+</head> 
+<style> 
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    fieldset {
+        width: 40%;
+        margin: auto;
+        border: 2px solid #2d2d2d;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    
+    input:not([type="radio"]) {
+        border-radius: 5px;
+        border: 1px solid #2d2d2d;
+        height: 30px;
+        padding: 5px;
+        width: calc(100% - 12px); /* Учитываем отступы */
+    }
+    
+    legend {
+        font-size: 1.5em;
+        color: #2d2d2d;
+    }
+    
+    label {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 15px;
+    }
+    
+    label > span {
+        transition: all .2s;
+        transform-origin: top left;
+        font-size: 14px;
+        color: #555;
+    }
+    
+    .fs2 {
+        border: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    input ~ label {
+        margin-top: 0;
+        margin-right: 2em;
+    }
+    
+    button {
+        background-color: #2d2d2d;
+        color: white;
+        margin-top: 2em;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #555; 
+    }
+</style> 
+
+<body> 
+<div style="margin-top: 5em"></div> 
+<form> 
+    <fieldset> 
+        <legend>Анкета</legend> 
+        <label> 
+            <input name="name"> 
+            <span>ФИО</span> 
+        </label> 
+        <label> 
+            <input name="date_of_birth" type="date" max="2024-09-13"> 
+            <span>Дата рождения</span> 
+        </label> 
+        <fieldset class="fs2"> 
+            <legend style="font-size: 15px">Пол</legend> 
+            <div style="padding: 5px;display: flex;"> 
+                <input type="radio" id="man" name="gender" value="M"/> 
+                <label for="man">Мужской</label><br/> 
+ 
+                <input type="radio" id="woman" name="gender" value="W"/> 
+                <label for="woman">Женский</label> 
+            </div> 
+        </fieldset> 
+        <label> 
+            <input name="tel" type="tel" pattern="[0-9]{12}"> 
+            <span>Номер телефона</span> 
+        </label> 
+        <label> 
+            <input name="group_number" type="text" pattern="[0-9]{6}" required> 
+            <span>Номер группы</span> 
+        </label> 
+        <label> 
+            <input name="average_score" type="number" min="0" max="10" step="0.1" required> 
+            <span>Средний балл</span> 
+        </label> 
+        <button type="submit">Отправить</button> 
+    </fieldset> 
+</form> 
+</body>
