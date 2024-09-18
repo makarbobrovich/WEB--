@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: rgb(52, 206, 142);
+    background: rgb(52, 152, 206);
     height: 100px;
 }
 
@@ -47,7 +47,7 @@ h1 {
 article {
     padding: 10px;
     margin: 10px;
-    background: rgba(16, 233, 215, 0.178);
+    background: rgba(29, 8, 114, 0.178);
 }
 
   
