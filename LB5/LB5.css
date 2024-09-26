@@ -17,37 +17,41 @@ h1 {
     line-height: 100px;
     margin: 0;
 }
-#fl1{
+
+#fl1 {
+    display: flex;
+    flex-direction: row; /* Элементы располагаются по горизонтали */
+}
+
+#fl2 {
+    display: flex; 
+    flex-direction: row-reverse; /* Элементы располагаются по горизонтали в обратном порядке */
+}
+
+#fl3 {
+    display: flex; 
+    flex-direction: column-reverse; /* Элементы располагаются по вертикали в обратном порядке */
+}
+
+#fl4 {
+    display: flex; 
+    flex-direction: column; /* Элементы располагаются по вертикали */
+}
+
+#fl5 {
+    height: 100%; /* Устанавливает высоту в 100% */
     display: flex;
     flex-direction: row;
 }
-#fl2{
-    display: flex;
-    flex-direction: row-reverse;
-}
-#fl3{
-    display: flex;
-    flex-direction: column-reverse;
-}
-#fl4{
-    display: flex;
-    flex-direction: column;
-}
-#fl5{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-#fl6{
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
+
+#fl6 {
+    height: 100%; 
+    display: flex; 
+    flex-direction: row-reverse; /* Элементы располагаются по горизонтали в обратном порядке */
 }
 
 article {
     padding: 10px;
     margin: 10px;
-    background: rgba(29, 8, 114, 0.178);
+    background: rgba(29, 8, 114, 0.178); 
 }
-
-  

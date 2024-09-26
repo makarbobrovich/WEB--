@@ -90,6 +90,6 @@ a {
   90% { transform: translateY(400px); height: 70px; width: 70px; } /* Подъем */
   91% { transform: translateY(400px); height: 70px; width: 70px; animation-timing-function: ease-in; } /* Переход */
   97% { transform: translateY(590px); height: 66px; width: 70px; } /* Предпоследний этап */
-  99% { transform: translateY(600px); height: 65px; width: 71px; } /* Упадок */
+  99% { transform: translateY(600px); height: 65px; width: 70px; } /* Упадок */
   100% { transform: translateY(600px); height: 70px; width: 70px; } /* Конечное состояние */
 }
