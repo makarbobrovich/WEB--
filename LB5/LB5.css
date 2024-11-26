@@ -39,7 +39,7 @@ h1 {
 }
 
 #fl5 {
-    height: 100%; /* Устанавливает высоту в 100% */
+    height: 100%; 
     display: flex;
     flex-direction: row;
 }
